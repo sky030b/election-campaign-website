@@ -358,6 +358,8 @@ img {
   }
 
   & .issues-info {
+    /* align-items: end; */
+
     & .issue {
       color: #334155;
       white-space: pre-line; 
