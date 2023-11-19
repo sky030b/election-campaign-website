@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  /* font-weight: 100; */
 }
 
 body {
@@ -175,7 +176,7 @@ small {font-size: 14px;}
   color: white;
   background-color: #DA7D4A;
   white-space: nowrap; 
-  animation: marquee 15s linear infinite; 
+  /* animation: marquee 15s linear infinite;  */
   display: inline-block;
   padding: 10px;
 }
@@ -189,6 +190,7 @@ small {font-size: 14px;}
   }
 }
 
+/* advocate ---------------------------------------- */
 .advocate {
   background-color: #F7ECE1;
   /* height: 752px; */
@@ -197,12 +199,13 @@ small {font-size: 14px;}
   & .advocate-content {
     border-radius: 32px;
     overflow: hidden;
+    gap: 10px;
     background-color: #fff;
 
     & .advocate-text {
       width: 50%;
       background-color: #fff;
-      padding: 64px 40px;
+      padding: 48px 40px;
       flex-direction: column;
 
       & .identity {
@@ -219,7 +222,7 @@ small {font-size: 14px;}
 
         & .title {
           font-size: 64px;
-          line-height: 1;
+          line-height: 90px;
           padding-bottom: 20px;
         }
       }
@@ -230,24 +233,66 @@ small {font-size: 14px;}
           color: #334155;
         }
 
-        /* & p {
-          font-size: 14px;
-        } */
+        & p {
+          font-weight: 100;
+        }
       }
     }
   
     & .advocate-img {
       /* width: 50%; */
-      justify-content: right;
+      /* justify-content: right; */
       & img {
         max-width: 100%;
         height: auto;
       }
     }
   }
-
-
-
-
 }
 
+/* footer ---------------------------------------- */
+.footer {
+  background-color: #F7ECE1;
+  padding: 64px 0;
+  & .wrap {
+    gap: 16px;
+  }
+
+  & .footer-left {
+    width: 50%;
+    > * + * {
+      padding-top: 16px;
+    }
+
+    & .no3-name {
+      padding: 0;
+      
+      & .no3 {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+
+
+    & .external-link div {
+      width: 48px;
+      height: 48px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    & .copy-right {
+      color: #334155;
+    }
+  }
+
+  & .footer-right {
+    width: 50%;
+    color: #334155;
+    & h4 {
+      margin-bottom: 16px;
+    }
+  }
+
+}
