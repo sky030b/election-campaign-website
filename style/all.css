@@ -23,6 +23,12 @@ h4 {font-size: 24px;}
 h5 {font-size: 20px;}
 h6 {font-size: 16px;}
 small {font-size: 14px;}
+p {text-align: justify;}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* tool ---------------------------------------- */
 .container {
@@ -135,7 +141,8 @@ small {font-size: 14px;}
   font-weight: 400;
 }
 
-.identity {
+.block {
+  display: inline-block;
   color: white;
   background-color: #334155;
   border-radius: 16px;
@@ -160,6 +167,12 @@ small {font-size: 14px;}
 .name {
   font-weight: 700;
   color: #DA7D4A;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 90px;
+  padding-bottom: 20px;
 }
 
 .marqueeBox {
@@ -219,12 +232,6 @@ small {font-size: 14px;}
         & p {
           display: inline-block;
         }
-
-        & .title {
-          font-size: 64px;
-          line-height: 90px;
-          padding-bottom: 20px;
-        }
       }
 
       & .advocate-description {
@@ -250,6 +257,83 @@ small {font-size: 14px;}
   }
 }
 
+
+/* lastest-event ---------------------------------------- */
+.lastest-event {
+  padding: 100px 0;
+  color: #334155;
+
+  & .event-title {
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+
+  & .event-info {
+    gap: 24px;
+
+    & .event-focus {
+      width: 50%;
+      & .event-description {
+        > * + * {
+          padding-top: 8px;
+        }
+
+        & small {
+          color: #64748B;
+        }
+      
+        & p {
+          font-size: 16px;
+          font-weight: 100;
+        }
+      
+      }
+    }
+
+    & .event-list {
+      width: 50%;
+      > * + * {
+        padding-top: 24px;
+      }
+
+      & .events {
+        > * + * {
+          padding-top: 24px;
+        }
+        
+        & .event {
+          gap: 16px;
+
+
+          & .event-description {
+            & h6 {
+              font-weight: 700;
+            }
+
+            & p {
+              font-size: 16px;
+            }
+
+            > * + * {
+              padding-top: 8px;
+            }
+          }
+        }
+      }
+
+      & .see-more-btn {
+        display: block;
+        background-color: #F1F5F9;
+        padding: 16px 24px;
+        border-radius: 500px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
 /* footer ---------------------------------------- */
 .footer {
   background-color: #F7ECE1;
@@ -266,14 +350,12 @@ small {font-size: 14px;}
 
     & .no3-name {
       padding: 0;
-      
+
       & .no3 {
         width: 32px;
         height: 32px;
       }
     }
-
-
 
     & .external-link div {
       width: 48px;
