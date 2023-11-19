@@ -257,7 +257,6 @@ img {
   }
 }
 
-
 /* lastest-event ---------------------------------------- */
 .lastest-event {
   padding: 100px 0;
@@ -273,6 +272,21 @@ img {
 
     & .event-focus {
       width: 50%;
+      & .bgi {
+        /* width: 100px;
+        height: 100px; */
+        background-size: cover; /* 使用 cover 屬性使圖片填滿整個 <div>，可能會裁切部分圖片 */
+        background-repeat: no-repeat; /* 避免圖片重複 */
+        background-position: center;
+        background-color: orange;
+        border-radius: 8px;
+        overflow: hidden;
+
+        & img {
+          opacity: 0;
+        }
+      }
+
       & .event-description {
         > * + * {
           padding-top: 8px;
@@ -286,7 +300,6 @@ img {
           font-size: 16px;
           font-weight: 100;
         }
-      
       }
     }
 
