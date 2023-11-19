@@ -3,7 +3,6 @@
 *::after {
   margin: 0;
   padding: 0;
-  
   scroll-behavior: smooth;
 }
 
@@ -12,7 +11,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   box-sizing: border-box;
-  background-color: gray;
+  /* background-color: gray; */
   font-size: 18px;
 }
 
