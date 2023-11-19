@@ -1,0 +1,169 @@
+*,
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, 'Noto Sans TC', sans-serif, 'Castoro', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  background-color: gray;
+  /* overflow: hidden; */
+}
+
+h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
+h1 {font-size: 40px;}
+h2 {font-size: 32px;}
+h3 {font-size: 28px;}
+h4 {font-size: 24px;}
+h5 {font-size: 20px;}
+h6 {font-size: 16px;}
+small {font-size: 14px;}
+
+/* tool ---------------------------------------- */
+.container {
+  width: 1200px;
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+/* feature ---------------------------------------- */
+
+.nav {
+  position: fixed;
+  padding: 16px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+
+.logo {
+  gap: 8px;
+  padding: 12px 24px;
+}
+
+.logo-title {
+  color: #DA7D4A;
+}
+
+.interactiveBtns {
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  & a {
+    text-decoration: none;
+    color: #334155;
+    padding: 8px;
+    border-radius: 8px;
+  }
+}
+
+.external-link {
+  gap: 16px;
+  & a {
+    display: inline-block;
+    height: 32px;
+  }
+}
+
+.container-s {
+  width: 902px;
+  padding-top: 96px;
+}
+
+.slogan {
+  font-family: Mantou Sans;
+  font-size: 96px;  
+  background: linear-gradient(to right, #E5793B, #FF4185); /* 設定漸層顏色，可以根據需求調整起始和結束顏色 */
+  background-clip: border-box;
+  -webkit-background-clip: text; /* 使用webkit前綴以支援某些瀏覽器 */
+  color: transparent; /* 設定文字顏色為透明 */
+  font-weight: 400;
+}
+
+.identity {
+  color: white;
+  background-color: #334155;
+  border-radius: 16px;
+  padding: 12px 16px;
+  font-weight: 700;
+}
+
+.no3-name {
+  gap: 16px;
+  padding: 12px 16px;
+}
+
+.no3 {
+  width: 50px;
+  height: 50px;
+  font-weight: 900;
+  background-image: linear-gradient(to right, #E5793B, #FF4185);
+  border-radius: 50%;
+  color: white;
+}
+
+.name {
+  font-weight: 700;
+  color: #DA7D4A;
+}
+
+.marqueeBox {
+  background-color: #DA7D4A;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.marquee {
+  font-size: 64px;
+  line-height: 67.2px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: white;
+  font-family: Mantou Sans;
+  background-color: #DA7D4A;
+  white-space: nowrap; 
+  animation: marquee 10s linear infinite; 
+  display: inline-block;
+  padding: 10px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
