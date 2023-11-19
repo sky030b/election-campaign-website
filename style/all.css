@@ -3,6 +3,8 @@
 *::after {
   margin: 0;
   padding: 0;
+  
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,9 +12,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   box-sizing: border-box;
+  background-color: gray;
+  font-size: 18px;
 }
 
-h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
 h1 {font-size: 40px;}
 h2 {font-size: 32px;}
 h3 {font-size: 28px;}
@@ -24,6 +27,18 @@ small {font-size: 14px;}
 /* tool ---------------------------------------- */
 .container {
   width: 1200px;
+}
+
+.container-s {
+  width: 902px;
+}
+
+.container-70 {
+  width: 70%;
+}
+
+.container-90 {
+  width: 90%;
 }
 
 .mx-auto {
@@ -55,6 +70,21 @@ small {font-size: 14px;}
   justify-content: space-evenly;
 }
 
+.font-family-MS {
+  font-family: Mantou Sans;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #E5793B, #FF4185); /* 設定漸層顏色，可以根據需求調整起始和結束顏色 */
+  background-clip: border-box;
+  -webkit-background-clip: text; /* 使用webkit前綴以支援某些瀏覽器 */
+  color: transparent; /* 設定文字顏色為透明 */
+}
+
+.c-orange {
+  color: #DA7D4A;
+}
+
 /* feature ---------------------------------------- */
 
 .nav {
@@ -64,6 +94,7 @@ small {font-size: 14px;}
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 20px;
+  z-index: 100;
 }
 
 .logo {
@@ -95,18 +126,12 @@ small {font-size: 14px;}
   }
 }
 
-.container-s {
-  width: 902px;
+.p-top-96 {
   padding-top: 96px;
 }
 
 .slogan {
-  font-family: Mantou Sans;
   font-size: 96px;  
-  background: linear-gradient(to right, #E5793B, #FF4185); /* 設定漸層顏色，可以根據需求調整起始和結束顏色 */
-  background-clip: border-box;
-  -webkit-background-clip: text; /* 使用webkit前綴以支援某些瀏覽器 */
-  color: transparent; /* 設定文字顏色為透明 */
   font-weight: 400;
 }
 
@@ -149,10 +174,9 @@ small {font-size: 14px;}
   letter-spacing: 2px;
   font-weight: 400;
   color: white;
-  font-family: Mantou Sans;
   background-color: #DA7D4A;
   white-space: nowrap; 
-  animation: marquee 10s linear infinite; 
+  animation: marquee 15s linear infinite; 
   display: inline-block;
   padding: 10px;
 }
@@ -168,6 +192,63 @@ small {font-size: 14px;}
 
 .advocate {
   background-color: #F7ECE1;
-  height: 752px;
-  padding: 0 300px;
+  /* height: 752px; */
+  padding: 100px 0;
+
+  & .advocate-content {
+    border-radius: 32px;
+    overflow: hidden;
+    background-color: #fff;
+
+    & .advocate-text {
+      width: 50%;
+      background-color: #fff;
+      padding: 64px 40px;
+      flex-direction: column;
+
+      & .identity {
+        padding: 8px 12px;
+      }
+
+      & .advocate-title {
+        /* width: 50%; */
+        flex-direction: column;
+        
+        & p {
+          display: inline-block;
+        }
+
+        & .title {
+          font-size: 64px;
+          line-height: 1;
+          padding-bottom: 20px;
+        }
+      }
+
+      & .advocate-description {
+        & h3 {
+          padding-bottom: 32px;
+          color: #334155;
+        }
+
+        /* & p {
+          font-size: 14px;
+        } */
+      }
+    }
+  
+    & .advocate-img {
+      /* width: 50%; */
+      justify-content: right;
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+
+
+
 }
+
