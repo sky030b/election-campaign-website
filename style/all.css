@@ -60,6 +60,10 @@ img {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -172,7 +176,6 @@ img {
 .title {
   font-size: 64px;
   line-height: 90px;
-  padding-bottom: 20px;
 }
 
 .marqueeBox {
@@ -219,15 +222,13 @@ img {
       width: 50%;
       background-color: #fff;
       padding: 48px 40px;
-      flex-direction: column;
 
       & .identity {
         padding: 8px 12px;
       }
 
       & .advocate-title {
-        /* width: 50%; */
-        flex-direction: column;
+        padding-bottom: 20px;
         
         & p {
           display: inline-block;
@@ -263,7 +264,6 @@ img {
   color: #334155;
 
   & .event-title {
-    flex-direction: column;
     margin-bottom: 64px;
   }
 
@@ -275,6 +275,8 @@ img {
       & .bgi {
         /* width: 100px;
         height: 100px; */
+        max-width: 648px;
+        height: auto;
         background-size: cover; /* 使用 cover 屬性使圖片填滿整個 <div>，可能會裁切部分圖片 */
         background-repeat: no-repeat; /* 避免圖片重複 */
         background-position: center;
@@ -343,6 +345,35 @@ img {
         cursor: pointer;
       }
     }
+  }
+}
+
+
+/* policy-issues ---------------------------------------- */
+.policy-issues {
+  padding: 100px 0;
+
+  & .issues-title {
+    padding-bottom: 64px;
+  }
+
+  & .issues-info {
+    & .issue {
+      color: #334155;
+      white-space: pre-line; 
+
+      & h4 {
+        margin: 0 16px 16px 16px;
+      }
+
+      & .img-radius {
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+    }
+
+
   }
 }
 

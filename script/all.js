@@ -70,13 +70,13 @@ renderEvents();
 const showFocus = document.querySelector('.event-focus');
 function renderFocus(data) {
   let str = `
-  <div class="bgi")">
+  <div class="bgi mx-auto">
     <img
       src="./image/Frame 32.png"
       alt="event focus picture"
     >
   </div>
-  <div class="event-description">
+  <div class="event-description mx-auto">
     <small>${data.date}</small>
     <h5>${data.title}</h5>
     <p>${data.descriptionL}</p>
@@ -84,7 +84,6 @@ function renderFocus(data) {
   `;
   showFocus.innerHTML = str;
   const bgi = document.querySelector('.bgi');
-  console.log(bgi, data.image)
   bgi.style.backgroundImage = `url(${data.image})`
 }
 renderFocus(events[1]);
